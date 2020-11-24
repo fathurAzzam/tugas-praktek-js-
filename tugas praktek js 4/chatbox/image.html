@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+
+<body style="margin: 200px;">
+
+    <select id="kumpulanGambar" onchange="changeGambar()">
+        <option value="https://www.worldofghibli.id/wp-content/uploads/2020/01/koleksi-gambar-binatang.jpg">Pilih Gambar</option>
+        <option value="https://cdn.idntimes.com/content-images/community/2020/03/89702463-605564716664008-6893735040536771074-n-1-bf7d155cf092de1a9ad2b3090948abab_600x400.jpg">Burung</option>
+        <option value="https://asset.kompas.com/crops/8W7pd63M6BgJmUKBGXATn7ErRhA=/37x7:863x558/750x500/data/photo/2019/03/06/3600604784.jpg">Anjing</option>
+        <option value="https://mmc.tirto.id/image/2019/01/08/kucing-sedih-istockphoto_ratio-16x9.jpg">Kucing</option>
+        <option value="https://blogpictures.99.co/jenis-ikan-discus.jpg">Ikan</option>
+    </select>
+
+    <br />
+    <img src="https://www.worldofghibli.id/wp-content/uploads/2020/01/koleksi-gambar-binatang.jpg" alt="gambar" id="gambar" style="width: 100%;">
+    <script type="text/javascript">
+        function changeGambar() {
+            let gambar = document.getElementById("kumpulanGambar").value;
+            document.getElementById("gambar").src = gambar;
+        }
+    </script>
+
+</body>
+
+</html>
